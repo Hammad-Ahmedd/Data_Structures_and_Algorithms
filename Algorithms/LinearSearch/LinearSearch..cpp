@@ -16,5 +16,5 @@ int linearSearch(int arr[], int size, int target)
 int main()
 {
     int arr[6] = {5, 3, 1, 4, 9, 10};
-    cout << linearSearch(arr, 6, 110);
+    cout << linearSearch(arr, 6, 9);
 }
