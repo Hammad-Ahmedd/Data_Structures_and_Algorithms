@@ -3,20 +3,21 @@ using namespace std;
 
 int maxSubarr(int arr[], int n)
 {
-    int maxsub = 0;
+    int maxsum = 0;
+    int totalsum = 0;
     for (int i = 0; i < n; i++)
     {
         for (int j = i; j < n; j++)
         {
-            int totalarr = 0;
+            totalsum = 0;
             for (int k = i; k <= j; k++)
             {
-                totalarr += arr[k];
-                maxsub = max(maxsub, totalarr);
+                totalsum += arr[k];
+                maxsum = max(totalsum, maxsum);
             }
         }
     }
-    return maxsub;
+    return maxsum;
 }
 
 int main()

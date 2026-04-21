@@ -28,6 +28,5 @@ int main()
 {
     vector<int> nums = {2, 4, 4, 5, 4, 5, 4, 4};
     cout << MooresAlgorithm(nums);
-
     return 0;
 }

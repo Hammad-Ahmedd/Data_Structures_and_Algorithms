@@ -19,8 +19,8 @@ int KadaneMaxSubSum(int arr[], int n)
 
 int main()
 {
-    int n = 7;
-    int arr[7] = {3, -4, 5, 4, -1, 7, -8};
+    int n = 4;
+    int arr[4] = {1, 2, 3, -2};
     int result = KadaneMaxSubSum(arr, n);
     cout << result << endl;
 }
