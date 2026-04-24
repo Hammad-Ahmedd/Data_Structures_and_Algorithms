@@ -34,6 +34,35 @@ void insertval(Node *&head, int val)
     temp->next = newNode;
 };
 
+void delete_Node_With_Loop(Node *&head)
+{
+    if (head == nullptr)
+    {
+        return;
+    }
+    Node *temp = head;
+    while (head != nullptr)
+    {
+        head = head->next;
+        delete temp;
+        temp = head;
+    }
+}
+
+void delete_Node_With_Recursion(Node *&head)
+{
+    if (head == nullptr)
+    {
+        return;
+    }
+
+    Node *temp = head;
+    head = head->next;
+    delete temp;
+
+    delete_Node_With_Recursion(head);
+}
+
 int main()
 {
 
@@ -44,11 +73,24 @@ int main()
     insertval(head, 50);
     insertval(head, 80);
 
+    cout << "Before Deletion " << endl;
+
     Node *salman = head;
     while (salman != nullptr)
     {
         cout << salman->data << " -> ";
         salman = salman->next;
+    }
+    cout << "NULL" << endl;
+
+    cout << "After Deletion " << endl;
+    delete_Node_With_Recursion(head);
+
+    Node *newnode = head;
+    while (newnode != nullptr)
+    {
+        cout << newnode->data << " -> ";
+        newnode = newnode->next;
     }
     cout << "NULL" << endl;
 
