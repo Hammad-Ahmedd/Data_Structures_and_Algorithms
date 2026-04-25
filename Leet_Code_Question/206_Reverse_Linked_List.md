@@ -1,4 +1,4 @@
-# Linked List Practice
+# 206. Reverse Linked List
 
 ## Problem
 
