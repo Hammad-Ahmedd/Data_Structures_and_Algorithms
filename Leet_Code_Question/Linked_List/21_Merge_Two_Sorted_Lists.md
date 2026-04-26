@@ -6,4 +6,4 @@
 
 ## Explanation Diagram
 
-![Merge Two Sorted Lists](../Images/21_Merge_Two_Sorted_Lists_visualization.png)
+![Merge Two Sorted Lists](../../Images/21_Merge_Two_Sorted_Lists_visualization.png)
